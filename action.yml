@@ -1,4 +1,4 @@
-name: 'PMD Source Code Analyzer Action - Fix'
+name: 'PMD Source Code Analyzer Action - for sap'
 author: Mauricio Cano - Forked from Felipe Echanique Torres
 description: 'This action allows to use PMD Source Code Analyzer from GitHub Actions and fixes a small issue with permissions'
 runs:
