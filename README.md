@@ -23,7 +23,7 @@ jobs:
           java-package: jre
           architecture: x64
 
-      - uses: mcanog/setup-pmd@v1
+      - uses: ashkumar-wtc/setup-pmd@v1
       - name: run-pmd
         run: pmd -d <source code> -R <ruleset> -f xml --failOnViolation false > report.xml
 ```
