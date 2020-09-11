@@ -13,7 +13,8 @@ function installPMD(){
   var mk = 'mkdir -p $HOME/pmd'
   var mbin = 'mkdir -p $HOME/bin'
   var mv = 'mv /tmp/pmd-bin-6.27.0/* $HOME/pmd'
-  exec(download+' && '+unzip+' && '+mk+' && '+mv+' && '+mbin , function(error, stdout, stderr){
+  var mcicd = 'mv cicd/java-hybris-profile.xml $HOME/cicd/java-hybris-profile.xml'
+  exec(download+' && '+unzip+' && '+mk+' && '+mv+' && '+mbin+' && '+mcicd , function(error, stdout, stderr){
     if(error) core.setFailed(stderr)
     core.debug(stdout)
     referencePMD()
